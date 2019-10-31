@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS GRID</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="rightbar">rightbar</div>
+    <section class="sidebar">sidebar</section>
+    <header class="top-bar no-print">
+      topbar
+    </header>
+    <main class="main">main
+      <button onclick="toggleSidebar()">toggle sidebar</button>
+      <button onclick="toggleNotification()">toggle notification</button>
+    </main>
+    <footer class="foot">foot</footer>
+
+    <div class="notification">
+      <div class="notification-content"></div>
+    </div>
+
+
+    <script>
+      function toggleSidebar(){
+        document.body.classList.toggle("showsidebar")
+      }
+      function toggleNotification(){
+        document.body.classList.toggle("shownotification")
+      }
+    </script>
+  </body>
+</html>
